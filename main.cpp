@@ -233,7 +233,7 @@ int main() {
 */
 
     //project 11
-
+/*
 int main() {
 
     int binary, decimal = 0, base = 1, lastDigit;
@@ -251,4 +251,25 @@ int main() {
     cout << "Decimal equivalent: " << decimal << endl;
 
     return 0;
+}
+*/
+
+    //project 12
+
+int main () {
+    int number;
+    int total=0;
+
+    cout << "Enter number: ";
+    cin >> number;
+
+    if (number > 10) {
+
+        while (number > 9) {
+
+            total = total + number % 10;
+            number=number/10;
+        }
+        cout << total + number << endl;
+    } else cout << number + number%10 << endl;
 }
